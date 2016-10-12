@@ -27,7 +27,7 @@ LOCAL_MODULE_PATH:= $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 LOCAL_SRC_FILES:= lspci.c common.c ls-caps.c ls-ecaps.c ls-kernel.c ls-map.c ls-tree.c ls-vpd.c
 LOCAL_C_INCLUDES:= $(INCLUDES)
 LOCAL_STATIC_LIBRARIES:= libpci_static
-#include $(BUILD_EXECUTABLE)
+include $(BUILD_EXECUTABLE)
 
 # pci.ids
 include $(CLEAR_VARS)
